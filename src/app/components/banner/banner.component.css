@@ -1,4 +1,28 @@
-img {
-    width: 100%;
-    height: 450px;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: none;
 }
+div img {
+    width: 100%;
+    height: 200px;
+}
+
+@media (min-width: 576px) {
+    div img {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    img {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+
+
