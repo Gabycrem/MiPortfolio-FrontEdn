@@ -8,6 +8,9 @@ img {
     width: 200px;
     padding-top: 14px;
 }
+.btn{
+    border-width: medium;
+}
 @media (min-width: 329px) {
     img {
         width: 40px;
@@ -25,5 +28,10 @@ img {
         margin-right: 1%;
         width: 220px;
         padding-top: 25px;
+    }
+}
+@media (min-width: 500px){
+    .sociales{
+        width: 350px;
     }
 }
