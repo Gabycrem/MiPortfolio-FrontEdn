@@ -1,0 +1,38 @@
+.row{
+    padding: 5% 0%;
+    background-color: #e6a6f5;
+    text-align: center;
+}
+.p1{
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: auto;
+}
+
+p, h2, .img1{
+    grid-column-start: 2;  
+}
+img{
+    width: 60%;
+    align-self: center;
+}
+
+@media(min-width:768px){
+    .p1{
+        display: grid;
+        grid-template-columns: 10% 45% 40% 5%;
+        grid-template-rows: auto;
+
+    }
+    h2, p{
+        grid-column-start: 2;
+    }
+
+    .img1{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 100%;
+        justify-self: stretch;
+    }
+}

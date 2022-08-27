@@ -1,0 +1,38 @@
+
+.row{
+    padding: 10% 0%;
+    background-color: #e6a6f5;
+}
+footer{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    font-size: small; 
+    align-items: center;
+}
+p{
+    margin: 0;
+}
+#p1, #p2{
+    display: none;
+}
+
+@media(min-width: 425px){
+    #p1, #p2{
+        display: block;
+
+    }  
+    #small{
+        display: none;
+    }
+}
+@media(min-width: 576px){
+    #p1, #p2{
+        display: block;
+        font-size: medium;
+    }  
+    #small{
+        display: none;
+    }
+}
