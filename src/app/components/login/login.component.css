@@ -1,0 +1,114 @@
+body{
+  top: 0;
+left: 0;
+margin: 0;
+padding: 0;
+height: 100vh;
+width: 100%;
+font-family: arial;
+background: linear-gradient(to right, rgba(230, 166, 245, 0.9), rgb(110 80 117 / 85%));
+}
+.info {
+float: left;
+color: white;
+padding-top: 30px;
+}
+#fotoperfil {
+  
+  width: 31%;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px #6e5075;
+}
+.form_body{
+position: absolute;
+left: 50%;
+top: 50%;
+height: 390px;
+width: 400px;
+transform: translate(-50%, -50%);
+background: linear-gradient(to right, rgba(230, 166, 245, 0.9), rgb(110 80 117 / 85%));
+border-radius: 10px;
+border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+border: 2px solid white;
+}
+.form_body img{
+height: 120px;
+width: 120px;
+position: relative;
+left: 33%;
+margin-top: -67px;	
+}
+.form_body .text{
+font-size: 30px;
+font-weight: 600;
+color: white;
+margin-left: 120px;
+margin-top: -5px;
+padding-bottom: 5px;
+border-bottom: 3px solid;
+border-radius: 3px;
+width: 160px;
+}
+.form_body input{
+height: 40px;
+width: 75%;
+margin-left: 45px;
+padding-left: 10px;	
+color: white;
+border: none;
+border: 2px solid white;
+border-radius: 2px;
+outline: none;
+font-family: verdana;
+background: transparent;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+font-size: 15px;
+}
+.form_body input:hover{
+transition: .5s;
+  border: 2px solid #6e5075;
+  color: #6e5075;
+}
+.form_body input[type="password"]{
+margin-top: 30px;
+}
+::placeholder{
+font-size: 16px;	
+color: white;
+}
+.form_body button{
+margin-top: 40px;
+margin-left: 45px;
+margin-bottom: 20px;
+height: 40px;
+  width: 78.5%;
+  color: #b9c4c6;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  border: 3px solid white;
+  cursor: pointer;	
+}
+.form_body button:hover{
+transition: .5s;
+color: #d5dbdd;
+  border: 3px solid white;
+background: linear-gradient(#e6a6f5, #6e5075);
+}
+
+.form_body .text2{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-left: 140px;
+
+  /* margin-top: -5px; */
+  padding-bottom: 5px;
+  border-bottom: 3px solid;
+  border-radius: 3px;
+  width: 160px;
+  }

@@ -1,0 +1,16 @@
+<body>
+
+  <div class="form_body">
+    <img src="../../../assets/loginico.png" class="img-fluid" id="fotoperfil">
+    <p class="text">User Login</p>
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+      <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Username" [(ngModel)]="nombreUsuario"
+        required /><br>
+      <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password" required><br>
+      <button>Login</button><br>
+
+    </form>
+    <a class="text2" href="http://">New Acount</a>
+
+  </div>
+</body>
