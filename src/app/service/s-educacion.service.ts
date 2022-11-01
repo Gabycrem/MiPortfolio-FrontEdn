@@ -8,8 +8,8 @@ import { Educacion } from '../model/educacion';
 })
 export class SEducacionService {
 
-  URL = 'http://localhost:8080/educacion/';
-  
+  URL = 'https://git.heroku.com/backendnm.git/educacion/';
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]> {
