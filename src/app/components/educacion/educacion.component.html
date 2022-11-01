@@ -1,9 +1,13 @@
 
 <div class="row" id="titulo">
-    <div id="separacion"></div>
     <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1 col-xl-2"></div>
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
         <h1>Educación</h1>
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-outline-light" routerLink="/educacion" *ngIf="isLogged">
+                Nueva Educación
+            </button>
+        </div>
     </div>
     <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 col-xl-2"></div>
 
@@ -12,59 +16,28 @@
 <div class="row" id="items">
     <!-- /*Trabajo1*/ -->
     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2"></div>
-    <div class="col-xs-10 col-sm-10 col-md-3 col-lg-3 col-xl-3">
-        <ul>
-            <li type="none">
-                <h2>Educación 1</h2>
-                <h3>(años)</h3>
-            </li>
-        </ul>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-8">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>{{Educacion.nombreE}}</td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light" routerLink="/editEdu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-square"></i>EDITAR
+                        </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash3-fill"></i>BORRAR
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-5">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit inventore eaque, culpa quidem libero
-            harum, ut quae facere, quas unde sit illo asperiores modi? Ratione enim cumque quod suscipit quo! Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Facere magnam ut nam quia nesciunt hic sunt sint eius
-            enim fugit sit maiores voluptatibus omnis incidunt quo quibusdam fuga, voluptatem eveniet!</p>
-    </div>
-</div>
-<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
 
-<div class="row" id="items">
-    <!-- /*Trabajo1*/ -->
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2"></div>
-    <div class="col-xs-10 col-sm-10 col-md-3 col-lg-3 col-xl-3">
-        <ul>
-            <li type="none">
-                <h2>Educación 2</h2>
-                <h3>(años)</h3>
-            </li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-5">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit inventore eaque, culpa quidem libero
-            harum, ut quae facere, quas unde sit illo asperiores modi? Ratione enim cumque quod suscipit quo! Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Facere magnam ut nam quia nesciunt hic sunt sint eius
-            enim fugit sit maiores voluptatibus omnis incidunt quo quibusdam fuga, voluptatem eveniet!</p>
-    </div>
-</div>
-<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
-
-<div class="row" id="items">
-    <!-- /*Trabajo1*/ -->
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2"></div>
-    <div class="col-xs-10 col-sm-10 col-md-3 col-lg-3 col-xl-3">
-        <ul>
-            <li type="none">
-                <h2>Educación 3</h2>
-                <h3>(años)</h3>
-            </li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-5">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit inventore eaque, culpa quidem libero
-            harum, ut quae facere, quas unde sit illo asperiores modi? Ratione enim cumque quod suscipit quo! Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Facere magnam ut nam quia nesciunt hic sunt sint eius
-            enim fugit sit maiores voluptatibus omnis incidunt quo quibusdam fuga, voluptatem eveniet!</p>
     </div>
 </div>
 <div class="col-xs-1 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
